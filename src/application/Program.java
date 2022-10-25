@@ -24,7 +24,7 @@ public class Program {
 		//System.out.println(obj);
 		System.out.println(seller);
 		
-		System.out.println("\n**** APLICATION TESTE: 1 - RECURSO: FINDBYDEPARTMENT ****");
+		System.out.println("\n**** APLICATION TESTE: 2 - RECURSO: FINDBYDEPARTMENT ****");
 		Department department = new Department(2, null);
 		
 		List<Seller> list = sellerDao.findBydepartment(department);
@@ -33,6 +33,18 @@ public class Program {
 			
 			System.out.println(obj);
 		}
+		
+		System.out.println("\n**** APLICATION TESTE: 3 - RECURSO: FINDALL ****");
+				
+		list = sellerDao.findAll();
+		
+		for(Seller obj : list) {
+			
+			System.out.println(obj);
+		}
+		
+		
+		
 
 	}
 
