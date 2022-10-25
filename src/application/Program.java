@@ -45,6 +45,15 @@ public class Program {
 		
 		
 		
+		System.out.println("\n**** APLICATION TESTE: 4 - RECURSO: INSERT ****");
+		
+		Seller newseller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 3000.0, department);
+		
+		sellerDao.insert(newseller);
+		
+		System.out.println("insert! New id = " + newseller.getId());
+		
+		
 
 	}
 
