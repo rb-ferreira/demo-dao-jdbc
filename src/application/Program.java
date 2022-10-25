@@ -53,7 +53,12 @@ public class Program {
 		
 		System.out.println("insert! New id = " + newseller.getId());
 		
+		System.out.println("\n**** APLICATION TESTE: 5 - RECURSO: UPDATE ****");
 		
+		seller = sellerDao.findById(1);
+		seller.setName("martha Waine");
+		sellerDao.update(seller);
+		System.out.println("update Completed");
 
 	}
 
